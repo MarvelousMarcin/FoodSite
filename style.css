@@ -14,9 +14,7 @@ header{
     display: flex;
     padding: 1rem;
     align-items: center;
-    background: rgba(42, 157, 143, 0.9);
-    border-radius: 0 0 1rem 1.5rem;
-    
+    background: rgba(42, 157, 143, 0.9);    
 }
 
 button{
@@ -205,6 +203,10 @@ main{
 
 }
 
+.burge-anim{
+    animation: fotAnim 1s infinite;
+}
+
 .text-burger{
     margin-bottom: 2rem;
 }
@@ -277,4 +279,13 @@ main{
     100%{
         transform: translateY(0px);
     }
+}
+
+@keyframes fotAnim{
+    0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
 }
