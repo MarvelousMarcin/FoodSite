@@ -6,14 +6,17 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #264653;
+    background: rgb(38,70,83);
+    background: linear-gradient(to bottom, rgba(38,70,83,1) 0%, rgba(35,93,86,1) 100%);
 }
 
 header{
     display: flex;
     padding: 1rem;
     align-items: center;
-    background: #2a9d8f;
+    background: rgba(42, 157, 143, 0.9);
+    border-radius: 0 0 1.5rem 1.5rem;
+    
 }
 
 button{
@@ -60,6 +63,15 @@ ul > li{
 
 ul > li:hover{
     transform: scale(1.1);
+    
+}
+
+ul > li a{
+    transition: all .3s ease-in-out;
+}
+
+ul > li a:hover{
+    color:#e76f51;
 }
 
 
@@ -68,6 +80,7 @@ ul > li i{
     padding: 0 1rem;
     font-size: 25px;
 }
+
 
 main{
     display: flex;
@@ -80,9 +93,8 @@ main{
     height: 100%
 }
 
-.foto{
-    flex: 1;
-}
+
+
 
 .description{
     flex: 1;
@@ -104,16 +116,28 @@ main{
 
 
 .foto img{
-    animation: fot 2s ease-in-out;
     width: 30vw;
     height: 60vh;
     border-radius: 2rem;
 }
 
-
+.foto{
+    animation: fot 1s ease-in-out;
+    flex: 1;  
+    text-align: center;
+}
 
 .buttons{
     margin-top: 2rem;
+}
+
+.foto h2{
+    transition: all .5s ease-in-out;
+}
+
+.foto h2:hover{
+    color: #e9c46a;
+    cursor: pointer;
 }
 
 .call-us{
@@ -231,6 +255,7 @@ main{
 .social:hover{
     transform: scale(1.1);
     opacity: 1;
+    cursor: pointer;
 }
 
 .arrow img{
